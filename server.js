@@ -2,13 +2,13 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
+dotenv.config();
 import resumeRoutes from './routes/resumeRoutes.js';
 import analyzeResumeRouter from "./routes/analyzeResume.js";
 
 import connectDB from './db.js';
 connectDB();
 
-dotenv.config();
 const app = express();
 
 // app.use(cors());
